@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
+  name = '';
+
+  countLiked = 0;
+
+
+  like(title: string){
+    this.countLiked++;
+    console.log(`Like ${title}`);
+  }
 }
