@@ -1,0 +1,15 @@
+<div [ngClass]="classes">
+    <div class="card">
+        <div class="content-box">
+            <h1 class="card-title">{{product.title}}</h1>
+            <p class="card-content">
+                {{product.content}}
+            </p>
+            <span class="see-more">See More</span>
+        </div>
+        <div class="date-box">
+            <span class="month">{{product.month | uppercase}}</span>
+            <span class="date">{{product.day}}</span>
+        </div>
+    </div>
+</div>
